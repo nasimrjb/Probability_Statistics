@@ -186,7 +186,7 @@ M[, 2]
 ## 4. data structues 
 
 ## read from file
-mobile <- read.csv("mobile.csv")
+mobile <- read.csv("olympic.csv")
 typeof(mobile)
 
 View(mobile)
