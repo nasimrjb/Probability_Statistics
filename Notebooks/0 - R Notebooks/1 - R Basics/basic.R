@@ -188,17 +188,17 @@ M[, 2]
 ## read from file
 mobile <- read.csv("olympic.csv")
 typeof(mobile)
-
 View(mobile)
 
-mobile[1, 2] # difficult
-mobile[1, "device"]
-mobile[1, ]
-mobile[, "device"]
 
-typeof(mobile["device"])
-typeof(mobile[, "device"])
-typeof(mobile[["device"]])
+mobile[1, 2] # difficult
+mobile[1, "Height"]
+mobile[1, ]
+mobile[, "Height"]
+
+typeof(mobile["Height"])
+typeof(mobile[, "Height"])
+typeof(mobile[["Height"]])
 typeof(mobile$device)
 
 ## filter 
