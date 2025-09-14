@@ -23,7 +23,7 @@ print(x)
 cat(state)
 
 ## multiple commands in one line: separated with ; 
-r1 <- 10 r2 <- 20 #syntax error! 
+##r1 <- 10 ##r2 <- 20 #syntax error! 
 r1 <- 10; r2 <- 20
 
 ## calculate sum of numbers from 1 to 100
@@ -63,7 +63,7 @@ rm(number, x)
 ## get help from R Documentation using ? or help()
 help("rm")
 ?rm 
-?%% #syntax error!
+##%% #syntax error!
 help("%%") # works ^_^ 
 
 # Data Structures ---------------------------------------------------------
@@ -205,13 +205,14 @@ typeof(mobile$device)
 mobile2000 <- mobile[mobile$year == 2000, ]
 
 ## create new column!
-mobile$area <- mobile$dim_length * mobile$dim_breadth
+##mobile$area <- mobile$dim_length * mobile$dim_breadth
+mobile$product <- mobile$Age * mobile$Height
 
 ## arrange 
-mobile[order(mobile$year), ] -> mobile.sorted.year
+mobile[order(mobile$Year), ] -> mobile.sorted.year
 
 ## delete NAs in price
-mobile[!is.na(mobile$price), ] -> mobile
+mobile[!is.na(mobile$Height), ] -> mobile
 
 ## statictical functions
 
